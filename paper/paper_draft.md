@@ -143,4 +143,23 @@ harmonic density.
 - Node spacing corresponds to geometric phase distance  
 - This structure is used for resonance detection and cycle modeling  
 
+---
+
+# Figure 2 — ASCII Resonance Timeline
+
+This figure shows the distribution of resonance events detected by the
+TIMDR resonance detector during a simulated cycle of 200 steps.
+
+Each dot (●) represents a resonance event. The horizontal axis represents
+phase progression over time.
+
+
+**Interpretation:**
+- The timeline shows clustering of resonance events
+- Gaps represent stable harmonic intervals
+- Dense regions indicate harmonic interference
+- This structure is used to analyze resonance density and cycle transitions
+
+
+
 
