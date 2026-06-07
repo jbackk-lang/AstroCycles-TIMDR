@@ -9,4 +9,10 @@ setup(
     include_package_data=True,
     install_requires=[],
     python_requires=">=3.8",
+    entry_points={
+    "console_scripts": [
+        "timdr=timdr_cli.__main__:main",
+    ]
+},
+
 )
