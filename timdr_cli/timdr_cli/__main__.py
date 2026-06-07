@@ -30,7 +30,25 @@ def main():
         print("Generating ASCII resonance plot...\n")
         summary = run_pipeline()
         events = summary["resonance_events"]
-        print(ascii_plot(events, total_steps=200))
+        print(ascii_plot(events, total_steps=200)
+              
+    elif command == "analyze":
+        print("Running harmonic analysis...\n")
+        summary = run_pipeline()
+        events = summary["resonance_events"]
+
+    total = len(events)
+    density = total / summary["total_steps"]
+    first = events[0] if events else None
+    last = events[-1] if events else None
+
+    print("TIMDR Harmonic Analysis")
+    print("-----------------------")
+    print(f"Total resonance events: {total}")
+    print(f"Resonance density: {density:.4f}")
+    print(f"First event index: {first}")
+    print(f"Last event index: {last}")
+    
 
     else:
         print(f"Unknown command: {command}")
