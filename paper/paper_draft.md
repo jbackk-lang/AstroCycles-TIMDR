@@ -128,3 +128,19 @@ research and visualization.
 
 # References
 (To be added in the final version.)
+
+---
+
+# Figure 1 — ASCII Harmonic Structure (TIMDR)
+
+This figure illustrates the conceptual harmonic layering used in the TIMDR
+framework. Each layer contains resonance nodes (●) distributed according to
+harmonic density.
+
+**Interpretation:**
+- Higher layers contain more nodes and shorter phase intervals  
+- Lower layers represent fundamental harmonic cycles  
+- Node spacing corresponds to geometric phase distance  
+- This structure is used for resonance detection and cycle modeling  
+
+
