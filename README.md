@@ -223,4 +223,44 @@ Aby upewnić się, że TIMDR działa poprawnie:
 3. Sprawdź wykresy generowane przez moduł `visualization/`  
 4. Zweryfikuj poprawność danych wejściowych w `planetary_cycles.json`
 
+## 🗺️ Roadmap / Plany rozwoju
+
+Poniżej znajduje się lista funkcji i rozszerzeń planowanych w kolejnych wersjach
+AstroCycles‑TIMDR. Roadmap jest aktualizowana wraz z rozwojem projektu.
+
+### ✔️ Etap 1 — Podstawowy model TIMDR (zrealizowane)
+- generowanie harmonicznych
+- detekcja rezonansów
+- analiza widmowa
+- podstawowe wizualizacje
+- testy jednostkowe
+
+### 🔄 Etap 2 — Rozszerzenia analityczne (w trakcie)
+- obsługa wielu obiektów jednocześnie (multi‑cycle resonance)
+- analiza rezonansów wyższych rzędów (np. 5:3, 7:4)
+- ulepszone wykresy fazowe
+- eksport wyników do formatu JSON/CSV
+
+### 🧠 Etap 3 — Modelowanie zaawansowane (planowane)
+- integracja z danymi efemeryd (np. JPL Horizons)
+- dynamiczne cykle zależne od czasu
+- adaptacyjne progi rezonansu
+- analiza nieliniowa i chaosu cyklicznego
+
+### 🌐 Etap 4 — Interfejs i narzędzia (planowane)
+- interaktywny dashboard (np. Streamlit)
+- generowanie raportów PDF/HTML
+- API do integracji z innymi projektami
+
+### 🧩 Etap 5 — Moduły eksperymentalne (opcjonalne)
+- analiza toroidalno‑fazowa
+- modele wielowymiarowe (TIMDR‑X)
+- integracja z Twoim modelem toruso‑Möbiusa
+
+---
+
+Jeśli chcesz dodać własne propozycje do roadmapy,
+możesz dopisać je w tej sekcji lub otworzyć issue w repozytorium.
+
+
 Testy pozwalają szybko wykryć błędy i zapewniają stabilność projektu.
