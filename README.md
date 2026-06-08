@@ -1,63 +1,30 @@
-# AstroCycles-TIMDR
+# AstroCycles‑TIMDR
 
-A geometric model of astrological cycles based on the TIMDR framework.
-
-This project explores:
-- harmonic structures,
-- resonance layers,
-- cycle transitions,
-- geometric phase shifts,
-- and multi-level periodicity.
-
-The goal is to create a unified geometric interpretation of astrological
-cycles using TIMDR principles.
+AstroCycles‑TIMDR to narzędzie do analizy cykli harmonicznych, rezonansów i struktur widmowych w danych astronomicznych.  
+Projekt opiera się na modelu TIMDR (Time‑Integrated Multi‑Dimensional Resonance), łącząc analizę harmoniczną, fazową i cykliczną.
 
 ---
 
-## 📁 Project Structure
+## 🚀 Szybki start
 
-### **1. Data**
-`data/planetary_cycles.json`  
-Contains astronomical cycle data used for harmonic and resonance analysis.
+### 1. Pobierz repozytorium
+git clone https://github.com/jbackk-lang/AstroCycles-TIMDR.git
+cd AstroCycles-TIMDR
 
-### **2. Algorithms**
-`algorithms/harmonic_generator.py`  
-Generates harmonic layers and resonance nodes.
+### 2. Zainstaluj zależności
+pip install -r requirements.txt
 
-`algorithms/resonance_detector.py`  
-Detects resonance events based on phase thresholds.
-
-### **3. Diagrams**
-`diagrams/harmonic_structure.md`  
-Conceptual description of harmonic layers.
-
-`diagrams/harmonic_ascii.md`  
-Lightweight ASCII visualization of harmonic structure.
+### 3. Uruchom podstawowy przykład
+python examples/basic_usage.py
 
 ---
 
-## 🔍 Purpose
+## 🧪 Minimalny przykład użycia
 
-This repository serves as a foundation for:
-- modeling harmonic cycles,
-- exploring resonance behavior,
-- developing geometric interpretations of astrological systems,
-- and preparing research materials for further publication.
+from timdr.algorithms.resonance_detector import detect_resonance
 
-More materials coming soon.
-import unittest
-from algorithms.resonance_detector import detect_resonance, next_phase
+result = detect_resonance("Mars", "Jupiter")
+print(result)
 
-class TestResonanceDetector(unittest.TestCase):
-
-    def test_resonance_detection(self):
-        self.assertFalse(detect_resonance(0.5))
-        self.assertTrue(detect_resonance(0.9))
-
-    def test_phase_wrapping(self):
-        self.assertEqual(next_phase(0.95, 0.1), 0.05)
-        self.assertEqual(next_phase(0.2, 0.3), 0.5)
-
-if __name__ == "__main__":
-    unittest.main()
-
+# Wynik:
+# Lista wykrytych harmonicznych, poziomy rezonansu i parametry fazowe
