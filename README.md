@@ -18,7 +18,28 @@ Moduł: `algorithms/harmonic_generator.py`
 Wynik: lista harmonicznych z parametrami fazowymi.
 
 ---
+## 🧭 Diagram działania TIMDR (tekstowy)
 
+Poniższy schemat pokazuje pełny przepływ pracy w modelu TIMDR — od danych wejściowych
+do końcowej analizy rezonansów i harmonicznych.
+
+1. **Dane wejściowe**
+   - wczytanie cykli z pliku `planetary_cycles.json`
+   - przygotowanie listy obiektów i ich parametrów
+
+2. **Warstwy harmoniczne**
+   - generowanie wielokrotności cykli (1×, 2×, 3×…)
+   - tworzenie mapy harmonicznych dla każdego obiektu
+
+3. **Porównanie faz**
+   - obliczenie różnic fazowych między cyklami
+   - identyfikacja punktów zbieżności
+
+4. **Detekcja rezonansów**
+   - sprawdzenie, czy różnica faz mieści się w progu rezonansu
+   - klasyfikacja rezonansu (np. 1:1, 2:1, 3:2)
+
+5. **Analiza wid
 ### 2. Detekcja rezonansów
 Moduł: `algorithms/resonance_detector.py`
 
