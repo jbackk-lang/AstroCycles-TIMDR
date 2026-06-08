@@ -175,3 +175,52 @@ Większość funkcji wizualizacyjnych umożliwia:
 Wizualizacje są opcjonalne, ale znacząco ułatwiają interpretację wyników
 i analizę zależności między cyklami.
 
+## 🧪 Testy i walidacja
+
+Projekt zawiera zestaw testów jednostkowych, które pozwalają sprawdzić poprawność
+działania kluczowych modułów TIMDR. Testy znajdują się w katalogu:
+
+tests/
+
+### Co jest testowane?
+
+1. **Generowanie harmonicznych**
+   - poprawność obliczeń wielokrotności cykli
+   - zgodność wyników z oczekiwanymi wartościami
+
+2. **Detekcja rezonansów**
+   - wykrywanie momentów zbieżności faz
+   - klasyfikacja rezonansów (1:1, 2:1, 3:2 itd.)
+
+3. **Analiza widmowa**
+   - identyfikacja dominujących częstotliwości
+   - poprawność transformacji widmowej
+
+4. **Pipeline TIMDR**
+   - integracja wyników z poszczególnych modułów
+   - spójność danych wejściowych i wyjściowych
+
+---
+
+### Jak uruchomić testy
+
+W katalogu głównym projektu:
+
+pytest
+
+lub, jeśli pytest nie jest zainstalowany:
+
+python -m pytest
+
+---
+
+### Walidacja działania
+
+Aby upewnić się, że TIMDR działa poprawnie:
+
+1. Uruchom testy jednostkowe  
+2. Porównaj wyniki przykładowych analiz z folderu `examples/`  
+3. Sprawdź wykresy generowane przez moduł `visualization/`  
+4. Zweryfikuj poprawność danych wejściowych w `planetary_cycles.json`
+
+Testy pozwalają szybko wykryć błędy i zapewniają stabilność projektu.
