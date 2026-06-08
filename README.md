@@ -119,3 +119,59 @@ print(wynik)
 
 # Wynik:
 # Lista wykrytych harmonicznych, poziomy rezonansu i parametry fazowe
+
+## 📊 Wizualizacje
+
+Projekt zawiera moduły odpowiedzialne za generowanie wykresów i diagramów
+przedstawiających harmoniczne, rezonanse oraz strukturę fazową.
+
+Wizualizacje znajdują się w katalogu:
+
+visualization/
+
+### Dostępne typy wizualizacji
+
+1. **Wykresy harmonicznych**
+   - przedstawiają wielokrotności cykli (1×, 2×, 3×…)
+   - pokazują punkty przecięć i potencjalne węzły rezonansowe
+
+2. **Mapa rezonansów**
+   - wizualizacja momentów, w których cykle wchodzą w rezonans
+   - oznaczenie poziomu zgodności (np. 1:1, 2:1, 3:2)
+
+3. **Widmo częstotliwości**
+   - analiza widmowa (FFT / harmoniczna)
+   - identyfikacja dominujących częstotliwości i ich siły
+
+4. **Diagram fazowy**
+   - przedstawia różnice fazowe między cyklami
+   - pozwala łatwo zauważyć synchronizacje i przesunięcia
+
+---
+
+### Jak uruchomić wizualizacje
+
+Przykład:
+
+from timdr.visualization.plotter import plot_harmonics
+
+plot_harmonics("Mars")
+
+# Wynik:
+# Wygenerowany wykres harmonicznych dla wybranego obiektu
+
+---
+
+### Zapis wykresów
+
+Większość funkcji wizualizacyjnych umożliwia:
+
+- wyświetlenie wykresu na ekranie
+- zapis do pliku PNG lub SVG
+- integrację z pipeline TIMDR
+
+---
+
+Wizualizacje są opcjonalne, ale znacząco ułatwiają interpretację wyników
+i analizę zależności między cyklami.
+
