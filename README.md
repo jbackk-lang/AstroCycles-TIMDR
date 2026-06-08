@@ -4,6 +4,12 @@ AstroCycles‑TIMDR to narzędzie do analizy cykli harmonicznych, rezonansów i 
 Projekt opiera się na modelu TIMDR (Time‑Integrated Multi‑Dimensional Resonance), łącząc analizę widmową, harmoniczną i cykliczną.
 
 ---
+# AstroCycles‑TIMDR
+[Punkt A – szybki start]
+
+[Punkt B – dane wejściowe]
+
+(reszta Twojego README)
 
 ## 🚀 Szybki start
 
