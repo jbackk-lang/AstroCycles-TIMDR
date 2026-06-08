@@ -1,7 +1,7 @@
 # AstroCycles‑TIMDR
 
-AstroCycles‑TIMDR to narzędzie do analizy cykli harmonicznych, rezonansów i struktur widmowych w danych astronomicznych.  
-Projekt opiera się na modelu TIMDR (Time‑Integrated Multi‑Dimensional Resonance), łącząc analizę harmoniczną, fazową i cykliczną.
+AstroCycles‑TIMDR to narzędzie do analizy cykli harmonicznych, rezonansów i struktur fazowych w danych astronomicznych.  
+Projekt opiera się na modelu TIMDR (Time‑Integrated Multi‑Dimensional Resonance), łącząc analizę widmową, harmoniczną i cykliczną.
 
 ---
 
@@ -23,8 +23,8 @@ python examples/basic_usage.py
 
 from timdr.algorithms.resonance_detector import detect_resonance
 
-result = detect_resonance("Mars", "Jupiter")
-print(result)
+wynik = detect_resonance("Mars", "Jupiter")
+print(wynik)
 
 # Wynik:
 # Lista wykrytych harmonicznych, poziomy rezonansu i parametry fazowe
