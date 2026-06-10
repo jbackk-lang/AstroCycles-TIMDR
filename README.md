@@ -1,53 +1,105 @@
-# AstroCycles‑TIMDR  
-### Harmoniczne cykle, rezonanse i struktury fazowe oparte na modelu TIMDR
+# Topologia Informacji — Model 2.1  
+### Formalny model ruchu, transformacji i stabilności informacji  
+(oparty na jednostkach, operatorach, regułach i sprzężeniu zwrotnym φ)
 
-AstroCycles‑TIMDR to narzędzie do analizy **cykli astronomicznych**, **harmonicznych**, **rezonansów** i **struktur fazowych**, oparte na modelu **TIMDR — Time‑Integrated Multi‑Dimensional Resonance**.  
-Łączy analizę **widmową**, **fazową**, **cykliczną** i **harmoniczną**, tworząc spójny model wielopoziomowych zależności czasowych.
-
----
-
-## 1. Jak działa TIMDR (skrót)
-
-Model TIMDR analizuje cykle w kilku etapach:
-
-1. **Generowanie warstw harmonicznych**  
-   Moduł `harmonic_generator.py` oblicza wielokrotności cykli (1×, 2×, 3×…) i tworzy mapy harmonicznych dla każdego obiektu.  
-   Źródło: [sec4]
-
-2. **Detekcja rezonansów**  
-   Moduł `resonance_detector.py` porównuje fazy cykli i wykrywa momenty, w których różnica faz mieści się w progu rezonansu (np. 1:1, 2:1, 3:2).  
-   Źródło: [sec7][sec8]
-
-3. **Analiza widmowa**  
-   Moduł `spectral_analysis.py` wykonuje FFT / analizę harmoniczną i identyfikuje dominujące częstotliwości.  
-   Źródło: [sec9]
-
-4. **Pipeline TIMDR**  
-   Pełny przepływ:  
-   wczytanie danych → harmoniczne → rezonanse → widmo → integracja wyników → opcjonalna wizualizacja.  
-   Źródło: [sec10]
-
-5. **Wynik końcowy**  
-   - lista rezonansów  
-   - lista harmonicznych  
-   - analiza widmowa  
-   - struktura fazowa  
-   - opcjonalne wykresy  
-   Źródło: [sec11]
+Topologia Informacji 2.1 opisuje **jak informacja porusza się, zmienia, skręca, rezonuje i stabilizuje się** w przestrzeni topologicznej.  
+Model definiuje pełny zestaw **jednostek**, **operatorów**, **reguł**, **warunków stabilności** oraz **sprzężenie zwrotne φ**.
 
 ---
 
-## 2. Szybki start
+## 1. Jednostki (alfabet topologiczny)
 
-1. Pobierz repozytorium  
-   ```bash
-   git clone https://github.com/jbackk-lang/AstroCycles-TIMDR.git
-   cd AstroCycles-TIMDR
-   ```  
-   Źródło: [sec14]
+Model używa 13 jednostek opisujących różne aspekty informacji:
 
-2. Zainstaluj zależności  
-   ```bash
-   pip install -r requirements.txt
-   ```  
-   Źródło: [sec15]
+- **I** — informacja (ruch)  
+- **S** — kształt  
+- **T** — transformacja globalna  
+- **Tw** — skręt lokalny  
+- **ΔS** — różnica kształtu z progiem  
+- **N** — napięcie  
+- **R** — rezonans  
+- **Ø** — zero topologiczne  
+- **Λ** — amplituda zmiany  
+- **τ** — orientacja czasowa  
+- **ρ** — gęstość informacyjna  
+- **φ** — sprzężenie zwrotne
+
+---
+
+## 2. Operatory
+
+Model definiuje operatory przekształcające informację:
+
+- **I → S**  
+- **T(I, Λ)**  
+- **Tw(I, Λ)**  
+- **ΔS(ρ, ρ\*)**  
+- **S↻(τ)**  
+- **S↺**  
+- **S ⊗ S**  
+- **Res(S₁, S₂)**  
+- **φ(S)**  
+- **N**, **Ø**
+
+Każdy operator zmienia klasę topologiczną, orientację, gęstość lub stabilność.
+
+---
+
+## 3. Reguły (R1–R10 + rozszerzenia)
+
+- **R1–R7** — reguły podstawowe  
+- **R8** — skala zmienia klasę topologiczną  
+- **R9** — orientacja czasowa określa trajektorię  
+- **R10** — gęstość decyduje o stabilności cyklu  
+
+Dodatkowo:
+
+### **R15 — Zakaz mnożenia nieskończoności**  
+Nieskończoność jest **jedna** — nie można jej kopiować ani rozszczepiać.  
+Duplikacja ∞ niszczy brzeg kierunkowy i spójność przestrzeni.
+
+---
+
+## 4. Warunki stabilności
+
+Trzy kluczowe warunki:
+
+- **Λ_eff = Λ · τ**  
+- **ρ < ρ_krytyczne**  
+- **|ρ₁ – ρ₂| > ρ\*** dla aktywacji ΔS  
+
+Pozwala to wykrywać stabilne i niestabilne cykle informacji.
+
+---
+
+## 5. Reguła ρ/ΔS — diagnoza błędnych założeń
+
+Jeśli w analizie:
+
+- **ρ rośnie**, albo  
+- **ΔS rośnie**,  
+
+to problem leży **w założeniach**, nie w rachunku.
+
+> „Wzrost ρ lub ΔS oznacza, że diabeł siedzi w założeniach.”
+
+---
+
+## 6. Struktura repozytorium
+
+```
+/axioms      — reguły i warunki stabilności
+/operators   — definicje operatorów
+/filter      — wersje filtra (2.0, 2.1, 2.2)
+/mapping     — mapowanie topologii na architekturę AI
+/examples    — przykłady (torus–Möbius, TIMDR)
+```
+
+---
+
+## 7. Powiązania z innymi modelami
+
+- **TIMDR** — dynamika czasu i rezonansu  
+- **FIELDCORE** — pole i rezonanse  
+- **fundamental‑ai‑model** — architektura AI oparta na topologii  
+- **MAPA‑PO‑HELU
