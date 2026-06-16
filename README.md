@@ -94,6 +94,15 @@ to problem leży **w założeniach**, nie w rachunku.
 /mapping     — mapowanie topologii na architekturę AI
 /examples    — przykłady (torus–Möbius, TIMDR)
 ```
+<nav>
+    <a href="index.html">Strona główna</a>
+    <a href="https://jbackk-lang.github.io/astro-map/">Astro‑Map</a>
+    <a href="trm.html">TRM</a>
+    <a href="timdr.html">TIMDR</a>
+    <a href="topologia.html">Topologia</a>
+    <a href="zdjecia.html">Zdjęcia</a>
+    <a href="modele.html">Modele</a>
+</nav>
 
 ---
 
