@@ -1,106 +1,36 @@
-# Topologia Informacji — Model 2.1  
-### Formalny model ruchu, transformacji i stabilności informacji  
-(oparty na jednostkach, operatorach, regułach i sprzężeniu zwrotnym φ)
+# Topological Reduction Model (TRM) — Conceptual Framework for Structural Change
 
-Topologia Informacji 2.1 opisuje **jak informacja porusza się, zmienia, skręca, rezonuje i stabilizuje się** w przestrzeni topologicznej.  
-Model definiuje pełny zestaw **jednostek**, **operatorów**, **reguł**, **warunków stabilności** oraz **sprzężenie zwrotne φ**.
+**TRM (Topological Reduction Model)**  
+to **koncepcyjny model orientacyjny**, opisujący sposób, w jaki *skręt topologiczny (τ)*  
+może być używany jako metafora zmiany, redukcji i reorganizacji informacji  
+w systemach złożonych — od struktur symbolicznych po modele abstrakcyjne.
 
----
+TRM **nie jest teorią fizyczną**,  
+**nie jest modelem empirycznym**,  
+i **nie rości sobie prawa do opisu rzeczywistości naukowej**.
 
-## 1. Jednostki (alfabet topologiczny)
-
-Model używa 13 jednostek opisujących różne aspekty informacji:
-
-- **I** — informacja (ruch)  
-- **S** — kształt  
-- **T** — transformacja globalna  
-- **Tw** — skręt lokalny  
-- **ΔS** — różnica kształtu z progiem  
-- **N** — napięcie  
-- **R** — rezonans  
-- **Ø** — zero topologiczne  
-- **Λ** — amplituda zmiany  
-- **τ** — orientacja czasowa  
-- **ρ** — gęstość informacyjna  
-- **φ** — sprzężenie zwrotne
+To **narzędzie do myślenia**, framework pojęciowy,  
+który pozwala patrzeć na złożoność przez pryzmat skrętu, przejść i rezonansu.
 
 ---
 
-## 2. Operatory
+## 1. Założenia koncepcyjne TRM
 
-Model definiuje operatory przekształcające informację:
+W TRM informacja jest opisywana trzema operatorami:
 
-- **I → S**  
-- **T(I, Λ)**  
-- **Tw(I, Λ)**  
-- **ΔS(ρ, ρ\*)**  
-- **S↻(τ)**  
-- **S↺**  
-- **S ⊗ S**  
-- **Res(S₁, S₂)**  
-- **φ(S)**  
-- **N**, **Ø**
+- **τ — skręt**  
+  metafora zmiany, napięcia, przejścia między stanami
 
-Każdy operator zmienia klasę topologiczną, orientację, gęstość lub stabilność.
+- **ρ — redukcja informacji**  
+  metafora uproszczenia, stabilizacji, utraty złożoności
 
----
+- **ΔS — przejście strukturalne**  
+  metafora reorganizacji systemu
 
-## 3. Reguły (R1–R10 + rozszerzenia)
+W tym ujęciu:
 
-- **R1–R7** — reguły podstawowe  
-- **R8** — skala zmienia klasę topologiczną  
-- **R9** — orientacja czasowa określa trajektorię  
-- **R10** — gęstość decyduje o stabilności cyklu  
+- większy skręt → większa presja na redukcję,  
+- redukcja → prowadzi do przejścia,  
+- przejście → zmienia strukturę systemu.
 
-Dodatkowo:
-
-### **R15 — Zakaz mnożenia nieskończoności**  
-Nieskończoność jest **jedna** — nie można jej kopiować ani rozszczepiać.  
-Duplikacja ∞ niszczy brzeg kierunkowy i spójność przestrzeni.
-
----
-
-## 4. Warunki stabilności
-
-Trzy kluczowe warunki:
-
-- **Λ_eff = Λ · τ**  
-- **ρ < ρ_krytyczne**  
-- **|ρ₁ – ρ₂| > ρ\*** dla aktywacji ΔS  
-
-Pozwala to wykrywać stabilne i niestabilne cykle informacji.
-
----
-
-## 5. Reguła ρ/ΔS — diagnoza błędnych założeń
-
-Jeśli w analizie:
-
-- **ρ rośnie**, albo  
-- **ΔS rośnie**,  
-
-to problem leży **w założeniach**, nie w rachunku.
-
-> „Wzrost ρ lub ΔS oznacza, że diabeł siedzi w założeniach.”
-
----
-
-## 6. Struktura repozytorium
-
-```
-/axioms      — reguły i warunki stabilności
-/operators   — definicje operatorów
-/filter      — wersje filtra (2.0, 2.1, 2.2)
-/mapping     — mapowanie topologii na architekturę AI
-/examples    — przykłady (torus–Möbius, TIMDR)
-```
-
-
----
-
-## 7. Powiązania z innymi modelami
-
-- **TIMDR** — dynamika czasu i rezonansu  
-- **FIELDCORE** — pole i rezonanse  
-- **fundamental‑ai‑model** — architektura AI oparta na topologii  
-- **MAPA‑PO‑HELU
+To **model pojęciowy**,
