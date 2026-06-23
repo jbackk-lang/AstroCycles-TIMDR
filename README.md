@@ -1,3 +1,7 @@
+## 🔗 Wszystkie modele i repozytoria
+Pełna lista projektów znajduje się na stronie:
+https://jbackk-lang.github.io
+---
 # Topological Reduction Model (TRM) — Conceptual Framework for Structural Change
 
 **TRM (Topological Reduction Model)**  
